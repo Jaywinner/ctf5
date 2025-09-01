@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>The Hacker’s Final Gate – Level 5 Challenge</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="console-animation" id="console-animation"></div>
+  <main>
+    <section id="landing" class="section">
+      <h1>🕵️‍♂️ The Hacker’s Final Gate – Level 5 Challenge</h1>
+      <p>
+        Welcome, cyber adventurer! You’ve reached the final gate.<br>
+        Only those who have conquered previous levels may proceed.<br>
+        <span class="neon">Are you ready?</span>
+      </p>
+      <!-- WhatsApp group link placeholder -->
+      <p class="whatsapp-link">
+        <span>Join our WhatsApp group for hints: </span>
+        <a href="#" id="whatsapp-link">[Link coming soon]</a>
+      </p>
+      <button onclick="scrollToSection('challenge')">Begin Challenge</button>
+    </section>
+
+    <section id="challenge" class="section">
+      <h2>🔒 Level 5: The Final Login</h2>
+      <div class="challenge-story">
+        <!-- Challenge description: edit as needed -->
+        <p>
+          You face a fake login portal. The source code hides clues. Combine hints from previous levels to unlock the final code.<br>
+          <span class="hint">Hint: Inspect the page source for secrets.</span>
+        </p>
+      </div>
+      <form id="ctf-form" autocomplete="off">
+        <label for="ctf-code">Enter the final code:</label>
+        <input type="text" id="ctf-code" name="ctf-code" required>
+        <button type="submit">Submit</button>
+      </form>
+      <div id="feedback"></div>
+    </section>
+
+    <section id="reward" class="section hidden">
+      <h2>🎉 Congratulations, Hacker!</h2>
+      <p>
+        You’ve cracked the final gate.<br>
+        <span class="neon">Welcome to the elite!</span>
+      </p>
+      <div class="reward-icon">🏆</div>
+      <p>
+        Join the WhatsApp group to claim your prize:<br>
+        <a href="#" id="whatsapp-link-final">[Link coming soon]</a>
+      </p>
+      <canvas id="confetti-canvas"></canvas>
+    </section>
+  </main>
+  <footer>
+    <small>© 2025 CTF Challenge | <span class="footer-icon">💻</span></small>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
