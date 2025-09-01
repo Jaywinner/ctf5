@@ -1,0 +1,130 @@
+/* --- Hacker/Terminal Theme --- */
+body {
+  margin: 0;
+  font-family: 'Fira Mono', 'Consolas', 'Courier New', monospace;
+  background: #101820;
+  color: #39ff14;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+.section {
+  margin-bottom: 3rem;
+  padding: 2rem 1rem;
+  background: rgba(20, 30, 40, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 0 16px #39ff1460;
+  transition: box-shadow 0.3s;
+}
+.section:not(.hidden):hover {
+  box-shadow: 0 0 24px #39ff14cc;
+}
+h1, h2 {
+  font-family: inherit;
+  color: #39ff14;
+  text-shadow: 0 0 8px #39ff14aa;
+}
+.neon {
+  color: #39ff14;
+  text-shadow: 0 0 8px #39ff14, 0 0 16px #39ff14;
+}
+.whatsapp-link a, #whatsapp-link-final {
+  color: #25d366;
+  text-decoration: underline;
+  font-weight: bold;
+}
+button {
+  background: #222;
+  color: #39ff14;
+  border: 2px solid #39ff14;
+  border-radius: 6px;
+  padding: 0.5em 1.2em;
+  font-size: 1em;
+  cursor: pointer;
+  margin-top: 1em;
+  transition: background 0.2s, color 0.2s;
+}
+button:hover {
+  background: #39ff14;
+  color: #222;
+}
+input[type="text"] {
+  background: #181c20;
+  color: #39ff14;
+  border: 1px solid #39ff14;
+  border-radius: 4px;
+  padding: 0.5em;
+  font-size: 1em;
+  margin-right: 1em;
+  width: 70%;
+}
+label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+#feedback {
+  margin-top: 1em;
+  font-weight: bold;
+  min-height: 2em;
+}
+.hint {
+  color: #00fff7;
+  font-style: italic;
+}
+.reward-icon {
+  font-size: 3em;
+  margin: 1em 0;
+  text-shadow: 0 0 16px #39ff14;
+}
+.hidden {
+  display: none !important;
+}
+footer {
+  text-align: center;
+  padding: 1em 0;
+  background: #181c20;
+  color: #39ff14;
+  font-size: 0.9em;
+}
+.footer-icon {
+  font-size: 1.2em;
+}
+@media (max-width: 600px) {
+  main {
+    max-width: 100%;
+    padding: 1rem 0.5rem;
+  }
+  .section {
+    padding: 1rem 0.5rem;
+  }
+  h1, h2 {
+    font-size: 1.3em;
+  }
+  .reward-icon {
+    font-size: 2em;
+  }
+}
+/* --- Console Animation --- */
+.console-animation {
+  width: 100%;
+  max-width: 500px;
+  margin: 2rem auto 0 auto;
+  background: #181c20;
+  color: #39ff14;
+  font-family: inherit;
+  font-size: 1.1em;
+  border-radius: 8px;
+  padding: 1em 1.5em;
+  box-shadow: 0 0 12px #39ff1460;
+  min-height: 2.5em;
+  letter-spacing: 1px;
+  overflow: hidden;
+  white-space: pre;
+}
