@@ -4,7 +4,7 @@ function scrollToSection(id) {
 }
 
 // --- Challenge Logic ---
-const CORRECT_CODE = "ctf5winner"; // <-- Change this to your real code!
+const CORRECT_CODE = "found_it"; // <-- Change this to your real code!
 const form = document.getElementById('ctf-form');
 const feedback = document.getElementById('feedback');
 const rewardSection = document.getElementById('reward');
